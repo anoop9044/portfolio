@@ -53,10 +53,10 @@ const roles = [
   }
   
   // Code snippet
-  const codeSnippet = `async def backend_engineer():
+  const codeSnippet = `async def lead_software_engineer():
      profile = {
-         "name": "Vismay Tiwari",
-         "role": "Backend Engineer",
+         "name": "Anoop Kumar Sharma",
+         "role": "Lead Software Engineer",
          "DSA Questions Solved": 530+ (if LeetCode is to be believed 🤷‍♂️)",
          "scale I worked on": {
                 "users": "200M+ 🙌",
@@ -76,7 +76,7 @@ const roles = [
                 "agile": "embracing change, one sprint at a time 🏃‍♂️",
                 "collaboration": "teamwork makes the dream work 🤝",
             },
-         "tech I love (you can in detail below)": {
+         "tech I love": {
                 "languages": "polyglot programmer - variety is the spice of code 🌶️",
                 "databases": "SQL for sanity, NoSQL for vanity, cache for velocity 🎭",
                 "messaging": "keeping microservices from becoming micro-service-sadness 📬",
@@ -87,6 +87,18 @@ const roles = [
                 "containers": "works on my machine? now works everywhere 🐳",
                 "cloud": "there's no place like 127.0.0.1, but cloud is a close second ☁️",
                 "automation": "if you do it thrice, automate it twice 🤖"
+            },
+         "leadership & mentorship": {
+                "inspiration": "leading by example – because actions speak louder than job titles 🌟",
+                "communication": "from all-hands meetings to one-on-one check-ins – clarity is king 🗣️",
+                "growth": "coaching team members to grow wings, not just complete tasks 🌱",
+                "team dynamics": "balancing team harmony with a touch of healthy conflict 🧩",
+                "ownership": "empowering others to take the wheel while offering guidance from the map room 🚀",
+                "empathy": "because understanding people is the ultimate leadership hack ❤️",
+                "delegation": "trusting others to shine – and knowing when to lend a hand 🤝",
+                "accountability": "owning outcomes, learning from setbacks, and sharing victories 🌈",
+                "vision": "painting the big picture while keeping the details in focus 🎨",
+                "mentorship": "lighting the path for others without dimming their shine 🔦"
             }
      }`;
   
@@ -126,7 +138,7 @@ const roles = [
   // Experience Data
   const experiences = [
     {
-      role: "Senior Software Engineer",
+      role: "Lead Software Engineer",
       company: "PocketFM",
       period: "2022 - Present",
       description: `
@@ -135,24 +147,48 @@ const roles = [
       `,
       bullets: [
         "Reduced MySQL lock contentions by cunning optimization—who knew queries could be so dramatic?",
-        "Introduced a streak feature that boosted retention (users love a good challenge, turns out).",
-        "Conducted 50+ A/B experiments to refine ARPU, user engagement, and maybe my coffee intake."
+        "Introduced a coin subscription that boosted retention (users love a good challenge, turns out).",
+        "Conducted 100+ A/B experiments to refine ARPU, user engagement, and maybe my coffee intake.",
+        "Reduced Redis query costs by introducing local caching—saving money and server sighs. 💸",
+        "Optimized cache invalidation strategies—because stale data is no one's best friend. 🚀",
+        "Achieved 98% test coverage—testing edge cases so sharp, they could cut production bugs. 🛡️",
+        "Implemented smarter key expiration policies—because every byte saved is a penny earned. 💾",
+        "Streamlined caching layers, ensuring blazing-fast performance with fewer resources. ⚡"
       ]
     },
     {
       role: "Software Engineer",
-      company: "Gammastack",
+      company: "Innovaccer",
       period: "2021 - 2022",
       description: `
-        Built real-time betting systems where every millisecond counts, and established 
-        bulletproof fraud detection to keep the party rolling.
+        Designed and implemented a robust assessment service supporting multitenancy,
+        enabling seamless management of multiple client environments with secure data isolation.
+        Enhanced user inclusivity by introducing multi-language assessments,
+        ensuring accessibility and scalability for diverse global audiences.
       `,
       bullets: [
-        "Engineered robust APIs for lightning-speed wagers in the gaming ecosystem.",
-        "Implemented data pipelines that sift out the bad actors so the good times can roll.",
-        "Optimized performance to ensure the house always stands (well, at least from a server standpoint)."
+        "Introduced multi-language support, ensuring assessments can speak to a global audience.",
+        "Optimized system architecture to handle diverse tenant requirements with robust performance.",
+        "Streamlined onboarding for tenants while maintaining a high degree of customization and flexibility."
       ]
-    }
+    },
+    {
+  role: "Software Engineer - II",
+  company: "Hashedin by Deloitte",
+  period: "Aug 2019 – May 2021",
+  description: `
+    Spearheaded engineering efforts to optimize cloud infrastructure,
+    streamline operations, and deliver robust solutions
+    for enterprise applications, significantly enhancing performance and cost efficiency.
+  `,
+  bullets: [
+    "Containerized 50+ services using Docker and deployed on Kubernetes, reducing AWS costs by 30% and improving scalability.",
+    "Built a middleware application with a P99 latency of 90ms to facilitate seamless communication in healthcare services.",
+    "Streamlined DevOps processes by integrating Jenkins for automated CI/CD, accelerating deployment cycles by 40%.",
+    "Developed robust attendance tracking features for an enterprise app, handling over 500 daily ePasses across 7 offices.",
+    "Conducted extensive code reviews and introduced best practices, reducing bugs and improving code maintainability."
+  ]
+}
   ];
   
   function populateExperience() {
@@ -281,11 +317,13 @@ revealElements.forEach(element => {
               Companies      int
               Technologies   []string
           }{
-              TotalYears:   3.5,
-              Companies:    2,
+              TotalYears:   5.5,
+              Companies:    3,
               Technologies: []string{
                   "Go", "Python", "MySQL",
                   "Redis", "Kubernetes",
+                  "AWS", "MongoDB", "Scylla",
+                  "Postgres", "Kafka"
               },
           },
       }
@@ -328,20 +366,28 @@ revealElements.forEach(element => {
 
   const experiences_2 = [
     {
-      role: "Senior Software Engineer",
+      role: "Lead Software Engineer",
       company: "PocketFM",
       period: "2022 - Present",
       heading:"**Scalability Adventures in OTT**",
-      description: " Worked with a 700+ server symphony to hit all the right notes for one of India's largest audio OTT platforms, delighting 200M+ users globally and managing 2.5M RPM without missing a beat. Tuned MySQL queries to cut down on lock contention—because who wants a database drama? Boosted user engagement with features like streak challenges that hit the sweet spot for retention. Conducted A/B experiments that tuned ARPU, engagement, and maybe even my caffeine budget.",
+      description: " Worked with a 700+ server symphony to hit all the right notes for one of India's largest audio OTT platforms, delighting 200M+ users globally and managing 2.5M RPM without missing a beat. Tuned MySQL queries to cut down on lock contention—because who wants a database drama? Boosted user engagement with features like Coin Subscription, Crosswalk that hit the sweet spot for retention. Conducted 100+ A/B experiments that tuned ARPU, engagement, and maybe even my caffeine budget.",
       techStack: ["Python", "Go", "MySQL", "Redis", "Kubernetes", "Kafka", "Elasticsearch", "Cassandra", "GCP", "Airflow", "Redshift", "Databricks"]
     },
     {
       role: "Software Engineer",
-      company: "Gammastack",
+      company: "Innovaccer",
       period: "2021 - 2022",
-      heading:"**Real-Time Betting at the Speed of Light**",
-      description: "Engineered real-time betting systems where every millisecond was a high-stakes moment, ensuring users never missed the action. Built fraud detection pipelines that worked harder than a casino bouncer, keeping the ecosystem clean and secure. Designed lightning-fast APIs and optimized performance to handle growing traffic—because when it rains wagers, the servers need to shine.",
-      techStack: ["Python", "Go", "PostgreSQL", "Redis", "DynamoDB", "Docker", "RabbitMQ", "Elasticsearch", "AWS", "Terraform"]
+      heading:"**Optimizing Healthcare Systems with Cutting-Edge Technology**",
+      description: "Migrated key services to a multi-tenant architecture, scaling to support 8+ clients without breaking a sweat. Slashed service response times by 70%—from 2400ms to 300ms—by fine-tuning code, optimizing databases, and adding some smart caching. Redesigned core features with cross-functional teams, enhancing system reliability and usability. Automated workflows that cut down manual tasks, boosting developer productivity by 30%. Deployed monitoring tools that stayed ahead of the game, proactively detecting issues and keeping everything running smooth.",
+      techStack: ["Python", "Go", "PostgreSQL", "Redis", "Docker", "RabbitMQ", "Elasticsearch", "AWS", "Terraform"]
+    },
+    {
+      role: "Software Engineer - II",
+      company: "Hashedin By Deloitte",
+      period: "2019 – 2021",
+      heading: "**Optimized Engineering for Scalable and Cost-Effective Solutions**",
+      description: "Containerized 50+ services using Docker and deployed on Kubernetes, trimming down AWS costs by 30% while enhancing scalability. Built a middleware app with a P99 latency of 90ms, ensuring smooth communication across healthcare services. Revamped DevOps with Jenkins automation for CI/CD, accelerating deployment cycles by 40%. Developed robust attendance tracking features for enterprise apps, handling 500+ daily ePasses across 7 offices. Introduced best practices through code reviews, minimizing bugs and boosting maintainability.",
+      techStack: ["Docker", "Kubernetes", "AWS", "Jenkins", "Python", "Go", "Microservices", "CI/CD", "Redis"]
     }
   ];
   
